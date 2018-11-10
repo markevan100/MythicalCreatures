@@ -1,21 +1,21 @@
 class Medusa
 
   attr_reader :name, :statues
-def initialize(name, statues = [])
-  @name = name
-  @statues = statues
-end
+  def initialize(name, statues = [])
+    @name = name
+    @statues = statues
+  end
 
-def stare(hero)
-    hero.stoned
-  if @statues.count <= 2
-  @statues << hero
-else
-  @statues[0].unstoned
-  @statues.shift
-  @statues << hero
-end
-end
+  def stare(hero)
+      hero.stoned
+    if @statues.count <= 2
+      @statues << hero
+    else
+      @statues[0].unstoned
+      @statues.shift
+      @statues << hero
+    end
+  end
 end
 
 class Person

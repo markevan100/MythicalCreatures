@@ -6,9 +6,9 @@ class Unicorn
     @color = color
   end
 
-def say(phrase)
-  return "**;* #{phrase} **;*"
-end
+  def say(phrase)
+    return "**;* #{phrase} **;*"
+  end
 
   def white?
     return true if color == "white"
